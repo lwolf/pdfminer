@@ -1,4 +1,5 @@
-STRICT = True
+import os
+STRICT = os.environ.get('PDF_MINER_IS_STRICT', True)
 
 try:
     from django.conf import django_settings
